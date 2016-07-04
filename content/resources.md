@@ -14,7 +14,7 @@ Python
 * [Test-Driven Development with Python](http://www.obeythetestinggoat.com/pages/book.html)
 * [Python Weekly (email newsletter)](http://www.pythonweekly.com/)
 * [Pycoders Weekly (email newsletter)](http://pycoders.com/)
-* [Podcast.__init__](http://podcastinit.com/)
+* [Podcast.\_\_init\_\_](http://podcastinit.com/)
 * [Talk Python to Me (podcast)](https://talkpython.fm/)
 * [Django Packages](https://www.djangopackages.com/)
 
