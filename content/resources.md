@@ -53,4 +53,4 @@ Regular Expressions
 General / Miscellaneous
 -----------------------
 
-* [List of Free Programming Books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) - Huge list of freely available programming books to read online; see the sections on (JavaScript)[https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#javascript] and (Python)[https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#python].
+* [List of Free Programming Books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) - Huge list of freely available programming books to read online; see the sections on [JavaScript](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#javascript) and [Python](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#python).
