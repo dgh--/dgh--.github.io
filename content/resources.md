@@ -16,7 +16,6 @@ Python
 * [Pycoders Weekly (email newsletter)](http://pycoders.com/)
 * [Podcast.\_\_init\_\_](http://podcastinit.com/)
 * [Talk Python to Me (podcast)](https://talkpython.fm/)
-* [Django Packages](https://www.djangopackages.com/)
 
 Django
 ------
@@ -25,6 +24,7 @@ Django
 * [Django Girls Tutorial](http://tutorial.djangogirls.org/en/)
 * [Tango with Django 1.7](http://www.tangowithdjango.com/book17/)
 * [Classy Class-Based Views](http://ccbv.co.uk/)
+* [Django Packages](https://www.djangopackages.com/)
 
 JavaScript
 ----------
