@@ -37,7 +37,8 @@ JavaScript
 * [ECMAScript 6 Language Specification](http://www.ecma-international.org/ecma-262/6.0/index.html)
 * [ECMAScript 7 Language Specification](http://www.ecma-international.org/ecma-262/7.0/index.html)
 * [JavaScript Weekly (email newsletter)](http://javascriptweekly.com/)
-
+* [Can I Use](http://caniuse.com/): Provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+* [ECMAScript Compatibility Tables](https://kangax.github.io/compat-table/es6/)
 Git
 ---
 
