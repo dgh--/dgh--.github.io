@@ -8,17 +8,31 @@ Essential Resources
 Python
 ------
 
+### Books / documentation
+
 * [Python 2.7 Documentation](https://docs.python.org/2.7/)
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+* [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
 * [Dive into Python](http://www.diveintopython.net/toc/index.html)
+* [Dive into Python 3](http://www.diveintopython3.net/)
+* [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
 * [Test-Driven Development with Python](http://www.obeythetestinggoat.com/pages/book.html)
+* [Think Python](http://greenteapress.com/wp/think-python/)
+
+### Newsletters
+
 * [Python Weekly (email newsletter)](http://www.pythonweekly.com/)
 * [Pycoders Weekly (email newsletter)](http://pycoders.com/)
+
+### Podcasts
+
 * [Podcast.\_\_init\_\_](http://podcastinit.com/)
 * [Talk Python to Me (podcast)](https://talkpython.fm/)
 
 Django
 ------
+
+### Books / documentation
 
 * [Official Documentation for Django 1.8](https://docs.djangoproject.com/en/1.8/)
 * [Django Girls Tutorial](http://tutorial.djangogirls.org/en/)
@@ -28,6 +42,8 @@ Django
 
 JavaScript
 ----------
+
+### Books / documentation
 
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Mozilla Developer Network's JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
