@@ -23,6 +23,7 @@ Python
 
 * [Python Weekly (email newsletter)](http://www.pythonweekly.com/)
 * [Pycoders Weekly (email newsletter)](http://pycoders.com/)
+* [Powerful Python Newsletter (advanced)](https://migrateup.com/python-newsletter/)
 
 ### Podcasts
 
