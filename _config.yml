@@ -1,0 +1,24 @@
+# Setup
+title:               FUCKIT 
+tagline:             'Ugh'
+description:         'If only Developers put as much effort into writing documentation as they did writing code. '
+url:                 https://dgh--.github.io/
+baseurl:             ""
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+
+exclude: []
+
