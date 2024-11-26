@@ -1,7 +1,7 @@
 # Setup
-title:               FUCKIT 
-tagline:             'Ugh'
-description:         'If only Developers put as much effort into writing documentation as they did writing code. '
+title:               Complications and Extrapolations
+tagline:             'there is nothing new under the sun'
+description:         'Ruminations on networking, coding, and other technical matters.'
 url:                 https://dgh--.github.io/
 baseurl:             ""
 paginate:            5
@@ -9,9 +9,9 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              David Hughes
+  url:               https://github.com/dgh--/
+  email:             dghughes82@gmail.com
 
 # Gems
 plugins:
