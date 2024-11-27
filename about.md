@@ -4,34 +4,19 @@ title: About
 ---
 
 <p class="message">
-  Hello there. This page, as you may already have discerned, is still under construction.
-  Blimey. That phrase takes me back.
+  Hello there. I'm a sometime programmer, religious studies and theology student, (very) amateur musician, 
+  and am currently working towards getting a number of IT certifications with a view to getting back into the industry.
 </p>
 
-<!-- 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I'm currently looking for work. My skillset includes (but is not limited to):-
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+* Linux
+* Programming (most experienced in Python, but I can get stuff done in most languages with a bit of effort)
+* General scripting (mostly bash, but have been trying to get up to speed with PowerShell)
+* Writing documentation (unlike most people in tech, I actually enjoy doing this)
 
-There are currently two themes built on Poole:
+In the long run, I want to specialise and get more knowledge of network and systems administration; after I've got my CCST
+Cybersecurity and CompTIA A+ certs under my belt I think I'll be aiming to study for CCNA, and possibly some of AWS and Microsoft's
+cloud and dev ops certs, depending on what I end up doing.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
-
--->
+If you want to contact me, you can find me on [LinkedIn](https://www.linkedin.com/in/david-hughes-34448b83/) and [Bluesky](https://bsky.app/profile/daihuws.bsky.social).
