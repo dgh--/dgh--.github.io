@@ -7,7 +7,7 @@ title: On Examinations
     On examinations, AI, and how to establish competencies and knowledge.
 </div>
 
-I am, at present, in the process of preparing to take some IT certification exams. [^1] One thing that has been grinding my gears of late is the sheer number of practice questions - even from the official training providers - which are either clumsily worded, misleaded, or ultimately just plain wrong. 
+I am, at present, in the process of preparing to take some IT certification exams. [^1] One thing that has been grinding my gears of late is the sheer number of practice questions - even from the official training providers - which are either clumsily worded, misleading, or ultimately just plain wrong. 
 
 On the face of it, it seems rather perplexing. In the case of CompTIA, Cisco, Microsoft, et al, the certifications that they offer are marketed as being highly-regarded qualifications that will help you open doors in your career, so it seems strange that rather blatant errors make it into their training materials with such regularity. Perhaps the lack of attention to detail might be best explained by the fact that in terms of their overall revenue - in the case of Cisco and Microsoft, at any rate - the certs are actually rather insignificant.
 
