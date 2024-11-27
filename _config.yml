@@ -8,8 +8,8 @@ paginate:            5
 permalink:           pretty
 
 # About/contact
-author:              David Hughes
-#  name:              David Hughes
+author:              
+  name:              David Hughes
   url:               https://github.com/dgh--/
   email:             dghughes82@gmail.com
 
