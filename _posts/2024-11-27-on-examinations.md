@@ -21,6 +21,7 @@ At this point you might be wondering where I'm going with all of this. It isn't 
 
 
 [^1]: In the very near future I'm going to be taking the CCST Cybersecurity and CompTIA A+ exams. For the avoidance of any doubt, I am writing prior to taking them, so the insights in this article are formed from self-assessment tools from various sources. I have not consulted any brain dumps, and I will not be update this post to reflect the content of the actual exams once I've taken them.
-[^2]: It's not entirely uncommon for people to ask me whether I'm training to be a priest, or something, but it's just a subject that I find fascinating as a mostly secular outsider. 
+[^2]: It's not entirely uncommon for people to ask me whether I'm training to be a priest, or something, but it's just a subject that I find fascinating as a mostly secular outsider.
+[^3]: I once received feedback on an essay that me referring to the Jewish people as an 'ethnoreligous group' was an example of awkward phrasing. I'm still a bit sore about that, given that I think it hints at the nuance of that situation pretty well. Unfortunately - or perhaps fortunately - you don't get the opportunity to argue back in such cases.
 [^4]: One unfortunate consequence of this has been to require candidates to be using either Windows or macOS; it doesn't really seem fair to the Linux users!
 [^5]: There is some truth to this, and surprisingly it often isn't a bad thing; you should, as far as reasonably possible, avoid messing around with things that you don't understand, at least in a professional context. Leave things like devising secure cryptographic encryption systems to the pros, because you will screw it up if you try to do it yourself.
