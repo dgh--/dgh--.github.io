@@ -1,31 +1,53 @@
 ---
 layout: post
-title: On Examinations
+title: Nobody told me that email is this complicated
 ---
 
 <div class="message">
-    On examinations, AI, and how to establish competencies and knowledge.
+    On SPF, DKIM, and DMARC. 
 </div>
 
-I am, at present, in the process of preparing to take some IT certification exams. [^1] One thing that has been grinding my gears of late is the sheer number of practice questions - even from the official training providers - which are either clumsily worded, misleading, or ultimately just plain wrong. 
+Of late I've been doing some voluntary work as an administrator for a charity. It's been a good way of keeping my hand in, and I've welcomed the chance to get my hands dirty and address some real world problems. Makes a change from writing essays about theology, at least.
 
-On the face of it, it seems rather perplexing. In the case of CompTIA, Cisco, Microsoft, et al, the certifications that they offer are marketed as being highly-regarded qualifications that will help you open doors in your career, so it seems strange that rather blatant errors make it into their training materials with such regularity. Perhaps the lack of attention to detail might be best explained by the fact that in terms of their overall revenue - in the case of Cisco and Microsoft, at any rate - the certs are actually rather insignificant.
+One thing that was mentioned to me quite early on, more or less in passing, was that they'd been having an issue sending email to Gmail accounts. My ears pricked up at this; here was a technical problem that I might be able to get to grips with. I thought it might be a good idea to summarise some of my findings in case its helpful to anybody else - although none of this is exactly rocket science I did find myself having to read across several different sources before I felt like I'd fully understood it.
 
-I think, though, that there is more to the problem than this. One issue that comes to mind is the limits of the multiple choice question as a means of assessing understanding. A quite common problem that I have when faced with a certain kind of multiple choice question is that you'll be asked to choose n correct answers, but the number of answers that could be correct amongst the choices is actually (n+1). You then find yourself embarking on a kind of epistemological guessing game; you must try and put yourself inside of the mind of the examiner, and try to discern what it is that they would accept as the correct answer, rather than what you actually hold to be the correct answer.
+## SPF : Sender Policy Framework.
 
-It's at times like this that I miss being able to write in my own caveats. In my spare time, I've been studying for a degree in theology and religious studies.[^2] The examination format, as you might imagine, is very different: typically you get awarded 5% of your credit for a given module based on contributions to student forums, 35% based on a coursework essay, and the remaining 60% based on an essay-based examination. Again, this system is not perfect; one objection that might be raised against it is that it is highly subjective, and that you are somewhat at the mercy of the whims of the examiner. Obviously this should not happen in an ideal world, but it is theoretically possible that you might argue in favour of something that your examiner strongly disagrees with (despite having made a good case based on the available evidence) or they may be irked by some aspect of your prose style[^3], and as a result you get marked down. (If you suspect that something like this has happened then all you can really do is accept it and move on, and try to bear in mind that they probably had to read and evaluate your work in a short space of time.) But nevertheless, one aspect of this style of examination that I do miss is that you have the opportunity to nuance the answer that you give; in a multiple choice question you do not have the ability to write in something along the lines of "this could be the result of an ongoing cyberattack, but other possibilities should be considered first".
+Back in the old days of the internet, when much greater minds than my own were architecting the various communication protocols that the nascent internet would depend upon, only an extremely cautious person would have highlighted that it was relatively straightforward to spoof email message headers such that it appeared to come from somebody other than the actual sender. At a time when the only people on the internet were likely to be research scientists and suchlike, there was much less reason to doubt other people's good intentions. Or so the thinking presumably went.
 
-One very interesting development recently has, of course, been the introduction of consumer AI products like ChatGPT. I found it particularly interesting to observe the response of my university, who went from allowing us to sit remote examinations unsupervised (these were, as it happens, open book exams) to introducing proctoring and essentially requiring us to temporarily install spyware.[^4] The first thing, of course, that should be noted about AI is that scarcely anybody understands it, including the majority of people working in tech. Back when I worked as a programmer, a popular joke among some of my peers was that an algorithm is a term used by a programmer to describe something that they've used that they don't understand.[^5] I think this goes doubly for AI - in fact, one slightly disturbing aspect of it is that even the specialists don't fully understand why those deep learning systems that do work yield the results that they do, and why others fail. What hope, then, does the layperson, who likely lacks the required advanced knowledge of highly specialised statistical mathematics have of understanding it? For almost everybody, then, an AI is something akin to a magical black box that yields unexplained results. (The best explanation that I could give you off the top of my head is that it's something to do with applied statistical methods, and that something like ChatGPT works by giving you what it deems to be the most probable answer to your question - but that is likely a gross oversimplification. All this considered, I hope that it isn't too unkind of me to observe that your average professor in a theology department is quite unlikely to grasp the subtleties of AI.)
+I must admit at this stage that it seems quite amazing to me that we got by without this rather elementary form of authentication of senders for so long. While the technology has been around for a couple of decades now, Gmail only started requiring it to be set up in order to handle incoming email _at all_.
 
-At this point you might be wondering where I'm going with all of this. It isn't as if there's an obvious solution; for those of us who are doing technical certification exams, all we can really do is learn what's on the syllabus, prepare for the style of examination that we're likely to face, and hope for the best. I guess it broadly works; if you do have a solid knowledge of your subject, then one or two oddly worded questions that you might miss shouldn't result in failing. However, I don't think it's too much to ask that the training providers take a little bit more care - one hazard of shoddily worded examinations is that some people will lose respect for the examination process and thus be more tempted to engage in unfair practice if they've come to the conclusion that the exam itself is largely nonsense.
+SPF is the simplest of the three email security technologies that I'm going to discuss here. In a nutshell, when a mail server receives an email, it will check whether it originated from a source designated in public DNS records before deeming it to be authentic. For example, for a domain that uses Microsoft's email infrastructure, the SPF TXT record would look something like this
 
-The key determinant here, I think, is that automated multiple choice exams are quick and relatively cheap to administer. For good or ill, little human intervention is required once the exam has been finalised. The candidate receives their result almost instantaneously. But exams like these are relatively easy to game; it's a violation of the terms of service, of course, but so-called 'brain dumps' are said to be easy enough to find.[^6] In an ideal world, though, it wouldn't be this way. I think a better approach - although it would be more expensive for all concerned - would be for candidates to be given assessments of their abilities that reflect more real world situations. It shouldn't matter if you refer to books, notes, or material on the internet in order to determine the answer to a question - what is far more important in real life is whether you can solve problems when they arise. Surprisingly enough, the approach taken by my university's theology department - allowing you to consult whichever materials help you answer the question as long as you don't get an AI to write your answers for you - is the more practical and grounded one.
+`v=spf1 include:spf.protection.outlook.com ~all`
+
+_Usually_ this information will be provided for you. If you are running your own email server (a) why? (and good luck) and (b) your knowledge is probably - hopefully- so advanced that you have no need of reading this post.
+
+# DKIM: DomainKeys Identified Mail
+
+While SPF is better than nothing, it doesn't offer complete protection against spoofing.[^1] DKIM uses public-key cryptography to implement a further layer of authentication. In this case, the public key is again stored in a DNS record.
+
+`NAME: default._domainkey.mail.example.org`
+`VALUE: "v=DKIM1; k=rsa; p=hsfaiab2931u9din29f9nh29dn924n929n92d9n29d9dkandad092090f2f2;"`
+
+(Not a real public key. I just typed a load of gibberish at random.)
+
+In this case, an authentic email message will contain a signature that could only have been generated by a server with access to the private key. The recipient may verify that the signature is valid by retrieving the public key from the DNS records. (I'm not going to get into the weeds of public key cryptography here. Hopefully this is a concept you're already familiar with.)
+
+[^1]: Strictly speaking, neither do SPF, DKIM, and DMARC used in conjunction. There are always loopholes and attack vectors. But let's not make people's lives easy?
+
+# DMARC: Domain-based Message Authentication, Reporting and Conformance
+
+Google requires organisations who send out over five thousand emails a day to also have DMARC set up correctly. According to Cloudflare's documentation:
+
+“A DMARC policy determines what happens to an email after it is checked against SPF and DKIM records. An email either passes or fails SPF and DKIM. The DMARC policy determines if failure results in the email being marked as spam, getting blocked, or being delivered to its intended recipient. (Email servers may still mark emails as spam if there is no DMARC record, but DMARC provides clearer instructions on when to do so.)”
+
+To re-iterate: it defines what a mail server should do with emails that do not pass SPF and DKIM checks. When determining DMARC policies it is wise to adopt a gradual approach - first, start with p=none - email that fails validation checks will still be transmitted to the recipient, allowing monitoring of the situation. Gradually you move towards stricter settings - only when you are entirely confident that every aspect of your email configuration is sound should you really consider adopting a `p=reject` policy.
 
 
 
-[^1]: In the very near future I'm going to be taking the CCST Cybersecurity and CompTIA A+ exams. For the avoidance of any doubt, I am writing prior to taking them, so the insights in this article are formed from self-assessment tools from various sources. I have not consulted any brain dumps, and I will not be update this post to reflect the content of the actual exams once I've taken them.
-[^2]: It's not entirely uncommon for people to ask me whether I'm training to be a priest, or something, but it's just a subject that I find fascinating as a mostly secular outsider.
-[^3]: I once received feedback on an essay that me referring to the Jewish people as an 'ethnoreligous group' was an example of awkward phrasing. I'm still a bit sore about that, given that I think it hints at the nuance of that situation pretty well. Unfortunately - or perhaps fortunately - you don't get the opportunity to argue back in such cases.
-[^4]: One unfortunate consequence of this has been to require candidates to be using either Windows or macOS; it doesn't really seem fair to the Linux users!
-[^5]: There is some truth to this, and surprisingly it often isn't a bad thing; you should, as far as reasonably possible, avoid messing around with things that you don't understand, at least in a professional context. Leave things like devising secure cryptographic encryption systems to the pros, because you will screw it up if you try to do it yourself.
-[^6]: You'd be shooting yourself in the foot if you did take this approach, regardless of any ethical considerations. You might well pass the exam, but you'd understand very little of the material that you'd be expected to understand.
+
+
+
+
+
